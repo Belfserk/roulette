@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <p id="round-number">Current Round: <span></span></p>
+    <p id="current-number">Last Roll: <span></span></p>
+    <button id="roll">Roll</button>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/roulette.js') }}"></script>
+{% endblock %}
